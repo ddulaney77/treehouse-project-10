@@ -2,9 +2,9 @@
 
 .container {
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 100px;
-  background: rgb(177, 209, 245);
+  background: rgb(173, 208, 248);
 }
 
 img {
