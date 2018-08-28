@@ -69,13 +69,13 @@
 
 // /*We currently offer the following data formats:
 
-// JSON (default)
+// JSON (default)    ////use this
 // PrettyJSON or pretty
 // CSV
 // YAML
 // XML
 // Just specify the format you would like returned by using the format parameter.*/
-// //https://randomuser.me/api/?format=csv
+// //https://randomuser.me/api/?format=JSON
 
 // /*Including/Excluding fields
 // Sometimes, maybe you want some random names and not extraneous data such as location, phone, etc.
@@ -85,24 +85,25 @@
 
 // These parameters accept the following values in a comma delimited list
 
-// gender
-// name
-// location
-// email
+// gender       //use this
+// name         // use this
+// location     // use this
+// email        // use this
 // login
 // registered
-// dob
-// phone
+// dob          //use this
+// phone        //use this
 // cell
 // id
-// picture
-// nat
+// picture      //use this
+// nat          // use this? 
+
 // If you only wanted the names,genders,and nats of users:
+// https://randomuser.me/api/?inc=gender,name,nat.location,email,dob,phone,picture
 
-// https://randomuser.me/api/?inc=gender,name,nat
+
 // If you want everything except for login data:
-
-// https://randomuser.me/api/?exc=login
+// https://randomuser.me/api/?exc=login,registered,cell,id
 // */
 
 
@@ -143,33 +144,36 @@
 
 
 /////////////////////////////modal/////////////////////////////////
-// // Get modal element
-// var modal = document.getElementById('simpleModal');
-// // Get open modal button
-// var modalBtn = document.getElementById('modalBtn');
-// // Get close button
-// var closeBtn = document.getElementsByClassName('closeBtn')[0];
+// Get modal element
+var modal = document.getElementById('simpleModal');
+// Get open modal button
+var modalBtn = document.getElementById('modalBtn');
+// Get close button
+var closeBtn = document.getElementsByClassName('closeBtn')[0];
 
-// // Listen for open click
-// modalBtn.addEventListener('click', openModal);
-// // Listen for close click
-// closeBtn.addEventListener('click', closeModal);
-// // Listen for outside click
-// window.addEventListener('click', outsideClick);
+// Listen for open click
+modalBtn.addEventListener('click', openModal);
+// Listen for close click
+closeBtn.addEventListener('click', closeModal);
+// Listen for outside click
+window.addEventListener('click', outsideClick);
 
-// // Function to open modal
-// function openModal(){
-//   modal.style.display = 'block';
-// }
+// Function to open modal
+function openModal(){
+  modal.style.display = 'block';
+}
 
-// // Function to close modal
-// function closeModal(){
-//   modal.style.display = 'none';
-// }
+// Function to close modal
+function closeModal(){
+  modal.style.display = 'none';
+}
 
-// // Function to close modal if outside click
-// function outsideClick(e){
-//   if(e.target == modal){
-//     modal.style.display = 'none';
-//   }
-// }
+// Function to close modal if outside click
+function outsideClick(e){
+  if(e.target == modal){
+    modal.style.display = 'none';
+  }
+}
+
+
+
