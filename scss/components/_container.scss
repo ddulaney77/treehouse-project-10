@@ -4,7 +4,7 @@
 
 .container {
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
   background: lightgrey;
   grid-gap: 4px;
   border: 1px solid grey;
@@ -21,9 +21,7 @@
   background:white;
 }
 
-.info {
-  margin: auto;
-}
+
 img {
   margin: 20px;
   height: 120px;
@@ -34,10 +32,23 @@ img {
  }
 
 
+ h2{
+  text-transform: uppercase;
+  color: rgb(48, 59, 59);
+  font-weight: 300;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
 h3 {
+  text-transform: capitalize;
   margin-top: 2em;
-  font-size: 26px;
-  color: darkgrey;
+  font-size: 24px;
+  color: rgb(48, 59, 59);
+  font-weight: 100;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+p {
+  font-size:16px;
+  color: rgb(109, 107, 107);
+  font-family: 'Times New Roman', Times, serif;
+}
