@@ -14,7 +14,7 @@ ul, li {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   background: lightgrey;
   grid-gap: 4px;
   border: 1px solid grey; }
@@ -47,11 +47,11 @@ h3 {
   margin-top: 2em;
   font-size: 24px;
   color: #303b3b;
-  font-weight: 100;
+  font-weight: 400;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
   color: #6d6b6b;
   font-family: 'Times New Roman', Times, serif; }
 
@@ -111,7 +111,7 @@ p {
 .forward, .back {
   margin-left: 20px;
   padding: 20px 75px;
-  font-size: 28px;
+  font-size: 50px;
   color: grey;
   display: inline-block; }
 
@@ -120,5 +120,18 @@ p {
 
 .forward {
   text-align: right; }
+
+.street-address {
+  text-transform: capitalize; }
+
+.cellPhone {
+  border-bottom: 1px solid lightgrey;
+  padding: 6px;
+  width: 75%;
+  text-align: center;
+  margin: auto; }
+
+.city {
+  text-transform: capitalize; }
 
 /*# sourceMappingURL=styles.css.map */

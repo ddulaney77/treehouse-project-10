@@ -4,7 +4,7 @@
 
 .container {
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   background: lightgrey;
   grid-gap: 4px;
   border: 1px solid grey;
@@ -16,6 +16,7 @@
   grid-template-columns: repeat(2, 1fr);
   justify-content: right;
   background: rgb(232, 233, 233);
+  
 }
 .box:hover{
   background:white;
@@ -43,12 +44,12 @@ h3 {
   margin-top: 2em;
   font-size: 24px;
   color: rgb(48, 59, 59);
-  font-weight: 100;
+  font-weight: 400;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 p {
-  font-size:16px;
+  font-size:18px;
   color: rgb(109, 107, 107);
   font-family: 'Times New Roman', Times, serif;
 }

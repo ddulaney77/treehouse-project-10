@@ -66,7 +66,7 @@ color:#fff;
 .forward, .back {
   margin-left: 20px;
   padding: 20px 75px;
-  font-size: 28px;
+  font-size: 50px;
   color: grey;
   display: inline-block;
 }
@@ -76,4 +76,18 @@ color:#fff;
 }
 .forward {
   text-align: right;
+}
+.street-address{
+  text-transform: capitalize;
+}
+
+.cellPhone {
+  border-bottom: 1px solid lightgrey;
+  padding:6px;
+  width:75%;
+  text-align: center;
+  margin:auto;
+}
+.city {
+  text-transform: capitalize;
 }
