@@ -1,13 +1,20 @@
-.modal{
-  // display:none;
+.modalSection {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  min-width: 100vw;
+  min-height: 100vh;
   position: fixed;
+  left: 0;
+  top: 0;
   z-index: 1;
+}
+.modal{
+  position: fixed;
+  z-index: 2;
   left: 440px;
   top: 30px;
-  // height: 80%;
   width: 35%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
 &-content{
   background-color:#f4f4f4;
   margin: 10% auto;
@@ -38,7 +45,7 @@ color:#fff;
 
 .modal-info span {
   padding: 10px;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: $border1;
 }
 .modal-image {
   text-align: center;
@@ -53,7 +60,7 @@ color:#fff;
 }
 
 .closeBtn:hover,.closeBtn:focus{
-  color:#000;
+  color: $black;
   text-decoration: none;
   cursor:pointer;
 }
@@ -64,25 +71,22 @@ color:#fff;
 }
 
 .forward, .back {
-  margin-left: 20px;
-  padding: 20px 75px;
-  font-size: 50px;
-  color: grey;
+  padding: 10px 124px;
+  color: $grey;
   display: inline-block;
+  text-align: center;
 }
 
 .forward:hover, .back:hover{
   cursor: pointer;
 }
-.forward {
-  text-align: right;
-}
+
 .street-address{
   text-transform: capitalize;
 }
 
 .cellPhone {
-  border-bottom: 1px solid lightgrey;
+  border-bottom: $border1;
   padding:6px;
   width:75%;
   text-align: center;

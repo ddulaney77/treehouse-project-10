@@ -16,7 +16,7 @@ ul, li {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   background: lightgrey;
-  grid-gap: 4px;
+  grid-gap: 25px;
   border: 1px solid grey; }
 
 .box {
@@ -26,7 +26,15 @@ ul, li {
   background: #e8e9e9; }
 
 .box:hover {
-  background: white; }
+  background: #fff;
+  cursor: pointer; }
+
+#search {
+  height: 50px;
+  width: 30%;
+  border: 2px solid coral;
+  padding: 10px;
+  margin-bottom: 20px; }
 
 img {
   margin: 20px;
@@ -55,14 +63,23 @@ p {
   color: #6d6b6b;
   font-family: 'Times New Roman', Times, serif; }
 
+.modalSection {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  min-width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1; }
+
 .modal {
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   left: 440px;
   top: 30px;
   width: 35%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5); }
+  overflow: auto; }
   .modal-content {
     background-color: #f4f4f4;
     margin: 10% auto;
@@ -87,7 +104,7 @@ p {
 
 .modal-info span {
   padding: 10px;
-  border-bottom: 1px solid lightgrey; }
+  border-bottom: 1px solid grey; }
 
 .modal-image {
   text-align: center;
@@ -109,23 +126,19 @@ p {
   to {
     opacity: 1; } }
 .forward, .back {
-  margin-left: 20px;
-  padding: 20px 75px;
-  font-size: 50px;
-  color: grey;
-  display: inline-block; }
+  padding: 10px 124px;
+  color: #878787;
+  display: inline-block;
+  text-align: center; }
 
 .forward:hover, .back:hover {
   cursor: pointer; }
-
-.forward {
-  text-align: right; }
 
 .street-address {
   text-transform: capitalize; }
 
 .cellPhone {
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid grey;
   padding: 6px;
   width: 75%;
   text-align: center;

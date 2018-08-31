@@ -6,9 +6,8 @@
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   background: lightgrey;
-  grid-gap: 4px;
-  border: 1px solid grey;
-
+  grid-gap: 25px;
+  border: $border1;
 }
 
 .box {
@@ -16,20 +15,26 @@
   grid-template-columns: repeat(2, 1fr);
   justify-content: right;
   background: rgb(232, 233, 233);
-  
 }
 .box:hover{
-  background:white;
+  background:$white;
+  cursor: pointer;
 }
 
-
+#search {
+  height: 50px;
+  width: 30%;
+  border: 2px solid coral;
+  padding: 10px;
+  margin-bottom: 20px;
+}
 img {
   margin: 20px;
   height: 120px;
   width: 120px;
   max-width: 100%;
-  border-radius: 50%;
-  border: 2px solid grey;
+  border-radius: $br-round;
+  border:$border2;
  }
 
 
