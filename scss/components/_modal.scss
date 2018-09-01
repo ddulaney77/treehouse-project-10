@@ -9,11 +9,11 @@
   z-index: 1;
 }
 .modal{
-  position: fixed;
+  position: relative;
   z-index: 2;
-  left: 440px;
+  left: 100px;
   top: 30px;
-  width: 35%;
+  width: 50%;
   overflow: auto;
 &-content{
   background-color:#f4f4f4;
@@ -94,4 +94,16 @@ color:#fff;
 }
 .city {
   text-transform: capitalize;
+}
+@media(min-width:768px){
+
+
+.modal{
+  position: relative;
+  z-index: 2;
+  left: 440px;
+  top: 30px;
+  width: 35%;
+  overflow: auto;
+}
 }

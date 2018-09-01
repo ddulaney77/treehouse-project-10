@@ -74,11 +74,11 @@ p {
   z-index: 1; }
 
 .modal {
-  position: fixed;
+  position: relative;
   z-index: 2;
-  left: 440px;
+  left: 100px;
   top: 30px;
-  width: 35%;
+  width: 50%;
   overflow: auto; }
   .modal-content {
     background-color: #f4f4f4;
@@ -146,5 +146,14 @@ p {
 
 .city {
   text-transform: capitalize; }
+
+@media (min-width: 768px) {
+  .modal {
+    position: relative;
+    z-index: 2;
+    left: 440px;
+    top: 30px;
+    width: 35%;
+    overflow: auto; } }
 
 /*# sourceMappingURL=styles.css.map */
