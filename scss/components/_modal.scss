@@ -12,7 +12,7 @@
   position: relative;
   z-index: 2;
   left: 100px;
-  top: 30px;
+  top: -15px;
   width: 50%;
   overflow: auto;
 &-content{
@@ -96,9 +96,7 @@ color:#fff;
   text-transform: capitalize;
 }
 @media(min-width:768px){
-
-
-.modal{
+  .modal{
   position: relative;
   z-index: 2;
   left: 440px;
